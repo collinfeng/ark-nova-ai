@@ -2,7 +2,8 @@
 
 Accounts live in experiments/auth/users.json (salted password hashes, never the passwords). The first time
 the server runs it makes two accounts and writes their ids and passwords to experiments/auth/credentials.txt
-(git-ignored): one that may use the AI's hints and win chances, one that may not. Each account plays its
+(git-ignored): one that may use the AI's hints and win chances, one that may not. The server's config.json
+can change that per account (config.py; by default the guest account does see hints). Each account plays its
 own game. Tokens are signed with experiments/auth/secret.key, so logins survive a server restart.
 """
 import base64

@@ -7,8 +7,9 @@ A rules engine for the board game **Ark Nova** and an AI that learns to play it 
 browser (guest play, no account needed when the server has a free place).
 
 - **Engine** (`arknova/`): the base game for 2 players, all base maps (Map 0, maps 1-8 and A) with their
-  special rules, cards, sponsors, conservation projects and final scoring. One Map 7 token (an animal
-  silhouette with a 2) has an unknown meaning and no effect for now. Every decision is a list of legal
+  special rules, cards, sponsors, conservation projects and final scoring. Two map tokens are not
+  certain: Map 3's rotate-card token is read as an upgrade (not confirmed by a written source), and Map 7's
+  animal-silhouette token with a 2 has an unknown meaning and no effect for now. Every decision is a list of legal
   options, so bots, networks and people play through the same interface.
 - **Bots** (`arknova/bot.py`): a greedy bot and a look-ahead (beam) bot, used as baselines.
 - **Reinforcement learning** (`arknova/rl/`, `tools/train_ppo.py`): an observation encoder, a policy/value
