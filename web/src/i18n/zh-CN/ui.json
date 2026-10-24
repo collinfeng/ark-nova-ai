@@ -770,6 +770,7 @@
       "signedInAs": "已登录：{user}",
       "signOut": "退出登录",
       "disclaimer": "非官方同人项目，与 Ark Nova 的出版方无关。",
+      "source": "GitHub 上的源代码",
       "creditDesign": "Ark Nova 由 Mathias Wigge 设计，出版方为",
       "creditPlay": "官方在线版请见",
       "creditRead": "更多介绍见",

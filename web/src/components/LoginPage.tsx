@@ -109,6 +109,8 @@ export function LoginPage({ onSignedIn }: { onSignedIn: () => void }) {
         </p>
         <p>
           {t('login.disclaimer', 'Unofficial fan project, not affiliated with the publishers of Ark Nova.')}
+          <span className="mx-2">·</span>
+          <Credit href="https://github.com/collinfeng/ark-nova-ai">{t('login.source', 'Source code on GitHub')}</Credit>
         </p>
       </footer>
     </div>
