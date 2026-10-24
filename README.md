@@ -20,6 +20,29 @@ browser (guest play, no account needed when the server has a free place).
 Unofficial fan project, not affiliated with the designer (Mathias Wigge) or the publishers (Feuerland Spiele,
 Capstone Games). Buy the game, or play it on [Board Game Arena](https://boardgamearena.com/gamepanel?game=arknova).
 
+## What is new here, and what is not
+
+This is an engineering project: it applies established reinforcement-learning methods to Ark Nova. No
+new algorithm is claimed. What it contributes is a complete, tested engine for the base game, an encoder
+and training setup that make the game learnable on one PC (about 40,000 decisions per second), a board to
+play against the result, and measurements of what helped and what did not for this game.
+
+The methods come from:
+
+- **PPO** (Schulman et al., 2017), run **asynchronously**: workers play while a separate learner trains on
+  slightly older games, as in IMPALA (Espeholt et al., 2018) and Sample Factory (Petrenko et al., 2020).
+- **Self-play** with a zero-sum two-player return, as in TD-Gammon and AlphaZero.
+- **Potential-based reward shaping** (Ng, Harada & Russell, 1999), set up so that a game's return is the
+  win or loss alone.
+- **Scoring each legal option** with one network, the usual approach for large, changing action sets
+  (action embeddings, e.g. Dulac-Arnold et al., 2015).
+- A **league** of agents and exploiters, after AlphaStar (Vinyals et al., 2019); tried and set aside here.
+- **Weight averaging** (an exponential moving average of the weights; Polyak averaging).
+- One network trained on **several maps** (multi-task training).
+
+Results are empirical findings about this game (for example, how much training on other maps transfers to a
+given map), not general claims.
+
 ## Setup
 
 Python 3.11+ and [PyTorch](https://pytorch.org) (install it for your platform first), then:
