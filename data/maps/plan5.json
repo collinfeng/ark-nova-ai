@@ -1,0 +1,241 @@
+{
+ "map": "plan5",
+ "name": "Park Restaurant",
+ "columns": [
+  [
+   ".",
+   ".",
+   "W",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".:xtoken",
+   ".:build2",
+   "W",
+   ".:xtoken",
+   "R",
+   ".:build2",
+   "."
+  ],
+  [
+   ".",
+   "R",
+   "R",
+   ".:sponsor_for_money",
+   "W",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".:clever",
+   "W",
+   "R",
+   ".",
+   ".:card",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".",
+   "W",
+   "W",
+   ".:build2"
+  ],
+  [
+   "R",
+   ".:card",
+   ".",
+   ".:card",
+   "R",
+   ".:money5"
+  ],
+  [
+   ".",
+   ".",
+   "R",
+   "W",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".:rep1",
+   ".",
+   "W",
+   ".",
+   "."
+  ]
+ ],
+ "special": [
+  {
+   "name": "park_restaurant",
+   "cells": [
+    [
+     4,
+     2
+    ]
+   ],
+   "terrain": "rock",
+   "note": "Restaurant icon drawn on a rock hex; break income 1 money per covered space adjacent to it. Adjacent: [4,1](water),[4,3],[3,2],[3,3],[5,2],[5,3]."
+  }
+ ],
+ "special_spaces": [
+  {
+   "name": "restaurant_adjacent_spaces",
+   "cells": [
+    [
+     4,
+     1
+    ],
+    [
+     4,
+     3
+    ],
+    [
+     3,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     3
+    ]
+   ],
+   "note": "Spaces whose being covered pays 1 money at break ([4,1] is water)."
+  }
+ ],
+ "partner_zoo_slots": [
+  [],
+  [
+   [
+    "upgrade",
+    1
+   ]
+  ],
+  [
+   [
+    "worker",
+    1
+   ]
+  ],
+  [
+   [
+    "conservation",
+    2
+   ]
+  ]
+ ],
+ "university_slots": [
+  [],
+  [
+   [
+    "upgrade",
+    1
+   ]
+  ],
+  []
+ ],
+ "last_worker": [
+  [
+   "conservation",
+   1
+  ]
+ ],
+ "tokens": [
+  [
+   [
+    [
+     "card",
+     1
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "enclosure",
+     2
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "money",
+     5
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "free_special_enclosure_choice_of_2",
+     1
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "worker",
+     1
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "money",
+     12
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "xtoken",
+     3
+    ]
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "[2,3] bonus icon (X-token tile above a card with '@') is new; named sponsor_for_money, meaning unknown.",
+  "Whether restaurant hex [4,2] counts as rock for placement (drawn as rock with the building icon on it)."
+ ],
+ "notes": "Grid shape matches Map 0. Left edge: 3 purple tokens (card, enclosure 2, money 5; no conservation 1); first yellow token = choose 1 of 2 depicted special enclosures (two 5-hex shapes) to build free; then worker, money 12, xtoken 3. Partner slot4 conservation 2; university slot3 EMPTY (Map 0: conservation 2); last worker 3 gives conservation 1 (Map 0: 2). New bonus: rep1 at [8,1].",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}

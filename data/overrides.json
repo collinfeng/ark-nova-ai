@@ -1,0 +1,234 @@
+{
+  "_comment": "Values read from the card images (data/raw/ssimeonoff/images) that the text source lacks. Applied by tools/build_cards.py. Building shapes are axial hex offsets (q, r) on a flat-top grid: N (0,-1), NE (1,-1), SE (1,0), S (0,1), SW (-1,1), NW (-1,0).",
+  "sponsor_effect_text": {
+    "208": {
+      "immediate": "Gain {Appeal-1} for each research icon in your zoo."
+    },
+    "231": {
+      "immediate": "Gain {Appeal-1} for each primate icon in your zoo."
+    },
+    "232": {
+      "immediate": "Gain {Appeal-1} for each reptile icon in your zoo."
+    },
+    "233": {
+      "immediate": "Gain {Appeal-1} for each bird icon in your zoo."
+    },
+    "234": {
+      "immediate": "Gain {Appeal-1} for each predator icon in your zoo."
+    },
+    "235": {
+      "immediate": "Gain {Appeal-1} for each herbivore icon in your zoo."
+    },
+    "241": {
+      "immediate": "Gain {Appeal-1} for each water icon in your zoo."
+    },
+    "242": {
+      "immediate": "Gain {Appeal-3} for each 2 rock icons in your zoo."
+    },
+    "243": {
+      "endgame": "Gain {ConservationPoint-1} for 6 herbivore icons."
+    },
+    "244": {
+      "endgame": "Gain {ConservationPoint-1} for 6 bird icons."
+    },
+    "245": {
+      "endgame": "Gain {ConservationPoint-1} for 6 water icons."
+    },
+    "246": {
+      "endgame": "Gain {ConservationPoint-1} for 6 rock icons."
+    },
+    "247": {
+      "endgame": "Gain {ConservationPoint-1} for 6 primate icons."
+    },
+    "248": {
+      "immediate": "Place this unique building (4 spaces)."
+    },
+    "249": {
+      "immediate": "Place this unique building (3 spaces)."
+    },
+    "250": {
+      "immediate": "Place this unique building (4 spaces)."
+    },
+    "251": {
+      "immediate": "Place this unique building (4 spaces).",
+      "endgame": "Gain {ConservationPoint-1} / {ConservationPoint-2} for 3 / 6 bear icons."
+    },
+    "252": {
+      "immediate": "Place this unique building (4 spaces)."
+    },
+    "253": {
+      "immediate": "Place this unique building (4 spaces)."
+    }
+  },
+  "sponsor_building": {
+    "243": {
+      "shape": [
+        [0, 0],
+        [1, -1],
+        [2, -1]
+      ]
+    },
+    "244": {
+      "shape": [
+        [0, 0],
+        [-1, 0],
+        [1, -1],
+        [1, 0]
+      ]
+    },
+    "245": {
+      "shape": [
+        [0, 0],
+        [-1, 1],
+        [1, 0],
+        [1, 1]
+      ]
+    },
+    "246": {
+      "shape": [
+        [0, 0],
+        [1, -1],
+        [2, -2],
+        [3, -3]
+      ]
+    },
+    "247": {
+      "shape": [
+        [0, 0],
+        [-1, 0],
+        [1, 0],
+        [0, 1]
+      ]
+    },
+    "248": {
+      "shape": [
+        [0, 0],
+        [-1, 0],
+        [-2, 1],
+        [1, 0]
+      ]
+    },
+    "249": {
+      "shape": [
+        [0, 0],
+        [-1, 0],
+        [1, 0]
+      ]
+    },
+    "250": {
+      "shape": [
+        [0, 0],
+        [-1, 0],
+        [1, -1],
+        [0, 1]
+      ]
+    },
+    "251": {
+      "shape": [
+        [0, 0],
+        [-1, 1],
+        [1, 0],
+        [2, -1]
+      ]
+    },
+    "252": {
+      "shape": [
+        [0, 0],
+        [-1, 0],
+        [1, -1],
+        [2, -2]
+      ]
+    },
+    "253": {
+      "shape": [
+        [0, 0],
+        [-1, 1],
+        [-2, 1],
+        [1, 0]
+      ]
+    },
+    "254": {
+      "shape": [
+        [0, 0],
+        [-1, 0],
+        [1, -1]
+      ],
+      "min_border": 2
+    },
+    "255": {
+      "shape": [
+        [0, 0],
+        [1, 0]
+      ]
+    },
+    "256": {
+      "shape": [
+        [0, 0],
+        [1, 0]
+      ]
+    },
+    "257": {
+      "shape": [
+        [0, 0],
+        [1, 0]
+      ],
+      "min_border": 2,
+      "needs_adjacency": false
+    }
+  },
+  "sponsor_conditions": {
+    "max_appeal": {
+      "207": 25,
+      "222": 25,
+      "258": 25,
+      "259": 25,
+      "260": 25,
+      "264": 25
+    },
+    "min_reputation": {
+      "227": 6,
+      "228": 3,
+      "243": 3,
+      "244": 3,
+      "245": 3,
+      "263": 6
+    }
+  },
+  "release_projects": {
+    "slot_animal_size": {
+      "1": {
+        "min": 4
+      },
+      "2": {
+        "min": 3,
+        "max": 3
+      },
+      "3": {
+        "max": 2
+      }
+    },
+    "play_bonus": [
+      [
+        "reputation",
+        1
+      ]
+    ]
+  },
+  "card_fields": {
+    "464": {
+      "enclosure.rock": 0
+    },
+    "221": {
+      "name": "Archaeologist"
+    },
+    "228": {
+      "name": "Waza Small Animals Program"
+    },
+    "467": {
+      "name": "Ecuadorian Squirrel Monkey"
+    },
+    "256": {
+      "appeal": 4
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+ "map": "plan1",
+ "name": "Observation Tower",
+ "columns": [
+  [
+   ".:xtoken",
+   ".",
+   "R",
+   "R",
+   "R",
+   ".:money5"
+  ],
+  [
+   "R",
+   ".",
+   ".",
+   "R",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   "R",
+   ".",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   "R",
+   ".",
+   ".:build2",
+   ".:card",
+   ".",
+   "R",
+   "R"
+  ],
+  [
+   ".:clever",
+   ".",
+   "W",
+   ".:build2",
+   ".",
+   ".:rep1"
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   "W",
+   ".:build2",
+   ".",
+   "W"
+  ],
+  [
+   ".",
+   ".",
+   ".:money5",
+   "W",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".:card",
+   ".",
+   "W",
+   ".:xtoken",
+   ".",
+   ".:xtoken"
+  ],
+  [
+   ".",
+   ".",
+   "W",
+   "W",
+   ".",
+   "."
+  ]
+ ],
+ "special": [
+  {
+   "name": "observation_tower",
+   "cells": [
+    [
+     1,
+     3
+    ]
+   ],
+   "terrain": "rock",
+   "note": "tower drawn on rock at col1,row3; +2 appeal when an adjacent standard enclosure becomes occupied"
+  }
+ ],
+ "special_spaces": [],
+ "partner_zoo_slots": [
+  "none",
+  "upgrade1",
+  "worker1",
+  "conservation2"
+ ],
+ "university_slots": [
+  "none",
+  "upgrade1",
+  "conservation1"
+ ],
+ "last_worker": "none",
+ "tokens": [
+  [
+   [
+    "card1"
+   ],
+   true
+  ],
+  [
+   [
+    "enclosure_size2"
+   ],
+   true
+  ],
+  [
+   [
+    "money5"
+   ],
+   true
+  ],
+  [
+   [
+    "sponsor_for_money"
+   ],
+   true
+  ],
+  [
+   [
+    "worker1"
+   ],
+   false
+  ],
+  [
+   [
+    "money12"
+   ],
+   false
+  ],
+  [
+   [
+    "xtoken3"
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "col1 row3: tower sits across rocks of col0 rows 2-4 and col1 row3; read tower hex as col1 row3 (tower base centred there), rock extent confirmed visually",
+  "purple token 4 icon (X token + '@' blue card) is not in the given list; named sponsor_for_money; meaning unknown (maybe X-token plus something)",
+  "last_worker: orange column shows no bonus icons at all (plan0 has conservation 2 on top slot)",
+  "university slot 3 gives conservation 1 (plan0: 2)"
+ ],
+ "notes": "Grid shape matches Map 0 (6/7/6/7/6/7/6/7/6 hexes). Build2 icons are drawn centred slightly above their hex centre; assigned to hex whose centre lies just below the icon (matches plan0 reference). The 'clever' icon is the card+blue/red arrow icon seen on plan0 col5 row3. Legend tower icon at the bottom is just the rule text.",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}

@@ -1,0 +1,223 @@
+{
+ "map": "plan4",
+ "name": "Commercial Harbor",
+ "columns": [
+  [
+   ".",
+   ".",
+   ".:rep1",
+   ".",
+   "W",
+   "."
+  ],
+  [
+   ".",
+   ".:xtoken",
+   "W",
+   ".",
+   ".",
+   ".",
+   "W"
+  ],
+  [
+   ".",
+   "W",
+   "W",
+   ".",
+   ".:clever",
+   "."
+  ],
+  [
+   ".",
+   ".:xtoken",
+   "W",
+   ".:card",
+   "R",
+   "R",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   "W",
+   ".",
+   ".:xtoken",
+   ".",
+   ".",
+   ".",
+   "R"
+  ],
+  [
+   ".:card",
+   ".:build2",
+   "R",
+   "R",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   "R",
+   ".:multiplier",
+   ".",
+   ".",
+   "R",
+   "."
+  ],
+  [
+   "W",
+   "W",
+   ".:build2",
+   ".:build2",
+   ".:build2",
+   ".:money5"
+  ]
+ ],
+ "special": [
+  {
+   "name": "commercial_harbor",
+   "cells": [],
+   "terrain": "rock",
+   "note": "Grey hex with a crane tower, OFF the 9-column grid: bottom-left corner, touching the lower-left edge of [0,5] (partly under the left-edge panel). Not a playable cell. Active once connected: once per turn discard 1 hand card for 3 money."
+  }
+ ],
+ "special_spaces": [
+  {
+   "name": "harbor_connecting_building_space",
+   "cells": [
+    [
+     0,
+     5
+    ]
+   ],
+   "note": "Only grid hex touching the harbor; a building on it connects the harbor."
+  }
+ ],
+ "partner_zoo_slots": [
+  [],
+  [
+   [
+    "upgrade",
+    1
+   ]
+  ],
+  [
+   [
+    "worker",
+    1
+   ]
+  ],
+  [
+   [
+    "conservation",
+    1
+   ]
+  ]
+ ],
+ "university_slots": [
+  [],
+  [
+   [
+    "upgrade",
+    1
+   ]
+  ],
+  [
+   [
+    "conservation",
+    1
+   ]
+  ]
+ ],
+ "last_worker": [
+  [
+   "conservation",
+   1
+  ]
+ ],
+ "tokens": [
+  [
+   [
+    [
+     "card",
+     1
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "enclosure",
+     2
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "money",
+     5
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "university",
+     1
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "worker",
+     1
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "money",
+     12
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "xtoken",
+     3
+    ]
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "Harbor connecting space [0,5] inferred from adjacency (harbor hex is clipped by the left panel); no explicit marker on any grid hex.",
+  "First yellow (once) left-edge token is a grey pillared-building icon (same icon as plan6 cell [7,1]); meaning unknown, named university.",
+  "Bonus 'multiplier' at [7,2] is a dark-purple pentagon with 'multiplier'; meaning unknown.",
+  "rep1 at [0,2] is a graduation-cap icon with 1 (plan0's rep2 is the same cap with 2)."
+ ],
+ "notes": "Grid shape matches Map 0 (6/7/6/7/6/7/6/7/6 hexes per column). Left edge: only 3 purple tokens (no conservation 1) plus an extra first yellow token (grey building icon). Partner slot4, university slot3 and last-worker-3 give conservation 1 (Map 0: 2). New bonuses vs Map 0: rep1, multiplier. Lake [1,2],[2,1],[2,2],[3,2].",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}

@@ -1,0 +1,221 @@
+{
+ "map": "plan8",
+ "name": "Hollywood Hills",
+ "columns": [
+  [
+   ".",
+   ".",
+   ".",
+   ".:clever",
+   "R",
+   "R"
+  ],
+  [
+   "W",
+   ".:xtoken",
+   "W",
+   ".",
+   ".",
+   ".",
+   "R"
+  ],
+  [
+   ".",
+   ".",
+   "W",
+   ".:build2",
+   ".",
+   "R"
+  ],
+  [
+   ".:xtoken",
+   ".",
+   ".",
+   ".:build2",
+   ".",
+   ".:build2",
+   "R"
+  ],
+  [
+   ".",
+   "W",
+   ".:xtoken",
+   ".",
+   "R",
+   "."
+  ],
+  [
+   ".",
+   "W",
+   "W",
+   ".",
+   ".",
+   ".",
+   "R"
+  ],
+  [
+   ".:money5",
+   "W",
+   ".",
+   ".",
+   ".",
+   "R"
+  ],
+  [
+   ".",
+   ".",
+   ".:card",
+   ".",
+   ".",
+   "R",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".",
+   ".:rep1",
+   "."
+  ]
+ ],
+ "special": [
+  {
+   "name": "hollywood_h",
+   "cells": [
+    [
+     1,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     4
+    ]
+   ],
+   "terrain": "plain",
+   "note": "H spaces (plain, no other bonus)"
+  }
+ ],
+ "special_spaces": [
+  {
+   "name": "H",
+   "cells": [
+    [
+     1,
+     5
+    ],
+    [
+     4,
+     5
+    ],
+    [
+     6,
+     4
+    ]
+   ]
+  }
+ ],
+ "partner_zoo_slots": [
+  [],
+  [
+   {
+    "upgrade": 1
+   }
+  ],
+  [
+   {
+    "worker": 1
+   }
+  ],
+  [
+   {
+    "conservation": 1
+   }
+  ]
+ ],
+ "university_slots": [
+  [],
+  [
+   {
+    "upgrade": 1
+   }
+  ],
+  [
+   {
+    "conservation": 1
+   }
+  ]
+ ],
+ "last_worker": [
+  {
+   "conservation": 1
+  }
+ ],
+ "tokens": [
+  [
+   [
+    "card",
+    1
+   ],
+   true
+  ],
+  [
+   [
+    "enclosure_size",
+    2
+   ],
+   true
+  ],
+  [
+   [
+    "money",
+    5
+   ],
+   true
+  ],
+  [
+   [
+    "partner_zoo",
+    1
+   ],
+   false
+  ],
+  [
+   [
+    "worker",
+    1
+   ],
+   false
+  ],
+  [
+   [
+    "money",
+    12
+   ],
+   false
+  ],
+  [
+   [
+    "xtoken",
+    3
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "left edge: yellow top token is a grey handshake icon (read as a free partner zoo); I did not see any 'restriction' wording since text is Chinese-only; the only restriction-like marks are the red worker-II tab next to pink slot 3 (identical on Map0)",
+  "col 0 row 5 and col 1 row 6 etc: rock hexes judged by dominant coverage; bottom rock chain read as col0 r4,r5; col1 r6; col2 r5; col3 r6; col5 r6; col6 r5; col7 r5 plus lone rock col4 r4"
+ ],
+ "notes": "Grid shape matches Map 0. Purple (repeat) left-edge tokens are only 3 (card 1, size-2 enclosure, money 5): the conservation 1 token is absent; yellow (once) has 4: handshake (partner zoo), worker 1, money 12, xtoken 3. Partner slot 4 = conservation 1, university slot 3 = conservation 1, last worker slot 3 = conservation 1 (all 1, Map0 has 2).",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}

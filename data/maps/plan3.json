@@ -1,0 +1,208 @@
+{
+ "map": "plan3",
+ "name": "Silver Lake",
+ "columns": [
+  [
+   ".:build2",
+   ".:rep1",
+   ".:money2",
+   ".:money2",
+   ".",
+   "W"
+  ],
+  [
+   ".:build2",
+   ".:build2",
+   ".:build2",
+   "W",
+   ".:money2",
+   ".",
+   ".:card"
+  ],
+  [
+   ".:build2",
+   "W",
+   "W",
+   "W",
+   ".:money2",
+   "."
+  ],
+  [
+   ".",
+   ".:money2",
+   ".:money2",
+   ".:money2",
+   ".:money2",
+   ".",
+   "R"
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".",
+   ".:rep1",
+   "R"
+  ],
+  [
+   "R",
+   ".:clever",
+   ".",
+   ".:card",
+   ".",
+   "W",
+   "W"
+  ],
+  [
+   "W",
+   "R",
+   ".",
+   ".",
+   "W",
+   ".:xtoken"
+  ],
+  [
+   "R",
+   ".:sponsor_for_money",
+   ".",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   "R",
+   "R",
+   ".:xtoken",
+   "."
+  ]
+ ],
+ "special": [
+  {
+   "name": "silver_lake",
+   "cells": [
+    [
+     2,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     3
+    ]
+   ],
+   "terrain": "water",
+   "note": "large lake on left; hexes adjacent to it carry money2 bonuses (profitable area)"
+  }
+ ],
+ "special_spaces": [
+  {
+   "name": "build2_with_money2",
+   "cells": [
+    [
+     2,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     1,
+     2
+    ]
+   ],
+   "note": "these three hexes show BOTH a build-II flag and a money 2 pentagon; columns list only build2, bonus money2 is additional"
+  },
+  {
+   "name": "xtoken_at_bonus",
+   "cells": [
+    [
+     7,
+     1
+    ]
+   ],
+   "note": "X + '@' icon"
+  }
+ ],
+ "partner_zoo_slots": [
+  "none",
+  "upgrade1",
+  "worker1",
+  "conservation1"
+ ],
+ "university_slots": [
+  "none",
+  "upgrade1",
+  "conservation2"
+ ],
+ "last_worker": "none",
+ "tokens": [
+  [
+   [
+    "card1"
+   ],
+   true
+  ],
+  [
+   [
+    "enclosure_size2"
+   ],
+   true
+  ],
+  [
+   [
+    "money5"
+   ],
+   true
+  ],
+  [
+   [
+    "upgrade_PROBABLE"
+   ],
+   false
+  ],
+  [
+   [
+    "worker1"
+   ],
+   false
+  ],
+  [
+   [
+    "money12"
+   ],
+   false
+  ],
+  [
+   [
+    "xtoken3"
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "hexes (2,0),(1,1),(1,2) have build2 AND money2: single token cannot hold both, see special_spaces",
+  "icon '2' pentagons read as money2 (coin-like grey square with 2); 11 of them, all adjacent to the Silver Lake hexes (consistency check passes)",
+  "yellow token 1 icon (circular arrow over red/blue card) named upgrade_PROBABLE; meaning unknown",
+  "last_worker: no bonus icons in orange column",
+  "sponsor_for_money icon new, meaning unknown"
+ ],
+ "notes": "Grid shape matches Map 0. Left tokens: 3 purple + 4 yellow. Lake neighbours verified with offset-column adjacency.",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}

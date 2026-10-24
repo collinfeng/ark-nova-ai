@@ -1,0 +1,218 @@
+{
+ "map": "plan6",
+ "name": "Research Institute",
+ "columns": [
+  [
+   "W",
+   "W",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".:xtoken",
+   ".",
+   ".",
+   ".:clever",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".:money5",
+   "R",
+   "R",
+   "."
+  ],
+  [
+   ".:xtoken",
+   ".",
+   ".",
+   "R",
+   "R",
+   ".:card",
+   "."
+  ],
+  [
+   "R",
+   ".:build2",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   "R",
+   ".:card",
+   ".:build2",
+   ".",
+   ".",
+   "W",
+   "W"
+  ],
+  [
+   ".:build2",
+   ".",
+   ".",
+   ".",
+   ".",
+   ".:rep1"
+  ],
+  [
+   ".:build2",
+   ".:university",
+   "W",
+   "W",
+   ".",
+   "R",
+   "."
+  ],
+  [
+   "W",
+   "W",
+   ".",
+   ".:money5",
+   ".",
+   "W"
+  ]
+ ],
+ "special": [
+  {
+   "name": "research_institute",
+   "cells": [],
+   "terrain": "rock",
+   "note": "Grey hex with grid-building icon and red -1 badge, OFF the grid at bottom-left touching [0,5]. Active once connected: each time an animal is played ignore 1 condition of choice."
+  }
+ ],
+ "special_spaces": [
+  {
+   "name": "institute_connecting_building_space",
+   "cells": [
+    [
+     0,
+     5
+    ]
+   ],
+   "note": "Only grid hex touching the institute."
+  }
+ ],
+ "partner_zoo_slots": [
+  [],
+  [
+   [
+    "upgrade",
+    1
+   ]
+  ],
+  [
+   [
+    "worker",
+    1
+   ]
+  ],
+  [
+   [
+    "conservation",
+    1
+   ]
+  ]
+ ],
+ "university_slots": [
+  [],
+  [
+   [
+    "upgrade",
+    1
+   ]
+  ],
+  []
+ ],
+ "last_worker": [
+  [
+   "conservation",
+   2
+  ]
+ ],
+ "tokens": [
+  [
+   [
+    [
+     "card",
+     1
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "enclosure",
+     2
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "money",
+     5
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "clever",
+     2
+    ]
+   ],
+   true
+  ],
+  [
+   [
+    [
+     "worker",
+     1
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "money",
+     12
+    ]
+   ],
+   false
+  ],
+  [
+   [
+    [
+     "xtoken",
+     3
+    ]
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "Connecting space [0,5] inferred from adjacency, no explicit marker.",
+  "[7,1] bonus is a grey pillared-building icon in a yellow pentagon, named 'building', meaning unknown.",
+  "Purple token 4 is '2x' + clever icon: read as clever multiplier, repeating.",
+  "Build2 flag icons sit above hex centres; assigned to the hex below: [4,1],[5,2],[6,0],[7,0]."
+ ],
+ "notes": "Grid shape matches Map 0. Left edge: purple card, enclosure 2, money 5, then 2x clever (instead of conservation 1); yellow worker, 12, xtoken 3. Partner slot4 conservation 1 (Map 0: 2); university slot3 EMPTY (Map 0: conservation 2); last worker 3 gives 2. Water: [0,0],[0,1],[5,5],[5,6],[7,2],[7,3],[8,0],[8,1],[8,5]. Rock cluster [2,3],[2,4],[3,3],[3,4]; rocks [4,0],[5,0],[7,5].",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}

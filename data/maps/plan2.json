@@ -1,0 +1,187 @@
+{
+ "map": "plan2",
+ "name": "Outdoor Areas",
+ "columns": [
+  [
+   "R",
+   "R",
+   ".:rep1",
+   ".",
+   "R",
+   "R"
+  ],
+  [
+   ".:build2",
+   ".:partner_zoo",
+   "R",
+   ".",
+   ".",
+   "R",
+   ".:sponsor_for_money"
+  ],
+  [
+   ".:build2",
+   ".",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".:build2",
+   "W",
+   ".",
+   "."
+  ],
+  [
+   "R",
+   ".",
+   ".",
+   ".:xtoken",
+   "W",
+   "W"
+  ],
+  [
+   "R",
+   ".:card",
+   ".",
+   ".:build2",
+   "W",
+   "W",
+   "."
+  ],
+  [
+   "W",
+   ".",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   "W",
+   ".:card",
+   ".",
+   ".:xtoken",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   "R",
+   ".",
+   ".",
+   ".:clever"
+  ]
+ ],
+ "special": [
+  {
+   "name": "outdoor_area",
+   "cells": [
+    [
+     5,
+     4
+    ]
+   ],
+   "terrain": "water",
+   "note": "gate icon drawn over a lake hex; adjacent standard enclosures count as 2 larger"
+  }
+ ],
+ "special_spaces": [
+  {
+   "name": "partner_zoo_bonus",
+   "cells": [
+    [
+     1,
+     1
+    ]
+   ],
+   "note": "grey handshake icon (partner-zoo related placement bonus)"
+  },
+  {
+   "name": "xtoken_at_bonus",
+   "cells": [
+    [
+     1,
+     6
+    ]
+   ],
+   "note": "X token + '@' blue card icon placement bonus"
+  }
+ ],
+ "partner_zoo_slots": [
+  "none",
+  "upgrade1",
+  "worker1",
+  "none"
+ ],
+ "university_slots": [
+  "none",
+  "upgrade1",
+  "conservation2"
+ ],
+ "last_worker": "conservation1",
+ "tokens": [
+  [
+   [
+    "card1"
+   ],
+   true
+  ],
+  [
+   [
+    "enclosure_size2"
+   ],
+   true
+  ],
+  [
+   [
+    "money5"
+   ],
+   true
+  ],
+  [
+   [
+    "conservation1"
+   ],
+   false
+  ],
+  [
+   [
+    "worker1"
+   ],
+   false
+  ],
+  [
+   [
+    "money12"
+   ],
+   false
+  ],
+  [
+   [
+    "xtoken3"
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "col5 row4: outdoor area gate hex - terrain read as water (water visible under/around gate; partly overlaid); could be plain",
+  "partner_zoo (handshake) and sponsor_for_money icons are new bonus names invented by me",
+  "partner slot 4 (top pink) has no bonus icon",
+  "last_worker top slot = conservation 1 (plan0: 2)"
+ ],
+ "notes": "Grid shape matches Map 0. Left tokens: 3 purple + 4 yellow (conservation 1 is yellow/once here, not purple as in plan0). Total still 7.",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}

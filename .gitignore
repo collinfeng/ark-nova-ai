@@ -1,0 +1,19 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+
+# Game content: not distributed with this code (see README, "Card data")
+data/cards.json
+data/cards_base.json
+data/raw/
+web/src/i18n/zh-CN/cards.json
+
+# Training runs, checkpoints, saved games, logins
+experiments/
+*.pt
+
+# Front end
+web/node_modules/
+web/dist/

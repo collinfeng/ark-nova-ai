@@ -1,0 +1,217 @@
+{
+ "map": "plan7",
+ "name": "Ice Cream Parlors",
+ "columns": [
+  [
+   "R",
+   "R",
+   ".:rep1",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   ".",
+   ".:kiosk",
+   ".",
+   ".",
+   "R",
+   ".:rep1",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".",
+   "R",
+   "."
+  ],
+  [
+   ".",
+   ".:card",
+   "R",
+   ".:sponsor_for_money",
+   ".:build2",
+   ".:build2",
+   ".:build2"
+  ],
+  [
+   "R",
+   "R",
+   ".",
+   ".:card",
+   "R",
+   ".:card"
+  ],
+  [
+   ".",
+   ".",
+   ".:kiosk",
+   ".",
+   "R",
+   ".:kiosk",
+   "."
+  ],
+  [
+   ".",
+   ".",
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  [
+   "W",
+   ".:xtoken",
+   "W",
+   ".:clever",
+   ".",
+   "W",
+   ".:money5"
+  ],
+  [
+   "W",
+   "W",
+   "W",
+   ".",
+   ".:xtoken",
+   "W"
+  ]
+ ],
+ "special": [
+  {
+   "name": "ice_cream_parlors",
+   "cells": [
+    [
+     1,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     5
+    ]
+   ],
+   "terrain": "plain",
+   "note": "kiosk placement-bonus spaces (kiosk icon); when all covered, +1 money income per kiosk at each break"
+  }
+ ],
+ "special_spaces": [
+  {
+   "name": "kiosk_bonus",
+   "cells": [
+    [
+     1,
+     1
+    ],
+    [
+     5,
+     2
+    ],
+    [
+     5,
+     5
+    ]
+   ]
+  }
+ ],
+ "partner_zoo_slots": [
+  [],
+  [
+   {
+    "upgrade": 1
+   }
+  ],
+  [
+   {
+    "worker": 1
+   }
+  ],
+  []
+ ],
+ "university_slots": [
+  [],
+  [
+   {
+    "upgrade": 1
+   }
+  ],
+  [
+   {
+    "conservation": 1
+   }
+  ]
+ ],
+ "last_worker": [
+  {
+   "conservation": 2
+  }
+ ],
+ "tokens": [
+  [
+   [
+    "card",
+    1
+   ],
+   true
+  ],
+  [
+   [
+    "enclosure_size",
+    2
+   ],
+   true
+  ],
+  [
+   [
+    "money",
+    5
+   ],
+   true
+  ],
+  [
+   [
+    "animal_silhouette_2_UNKNOWN"
+   ],
+   true
+  ],
+  [
+   [
+    "worker",
+    1
+   ],
+   false
+  ],
+  [
+   [
+    "money",
+    12
+   ],
+   false
+  ],
+  [
+   [
+    "xtoken",
+    3
+   ],
+   false
+  ]
+ ],
+ "uncertain": [
+  "left-edge 4th purple token (replaces conservation 1): a half-dark half-light animal silhouette (llama/camel-like) with number 2; meaning unknown, not in Map 0",
+  "col 3 row 3: icon is an X-token on top plus an '@'-like/dark-bar glyph (sponsor_for_money) - unknown bonus, not seen on Map 0",
+  "bonus naming: card icon = white card with cube and mortarboard (same as Map 0 'card'); clever icon at col7 row3 matches Map 0 col5 row3"
+ ],
+ "notes": "Grid shape matches Map 0 (6/7/6/7/6/7/6/7/6). Differences vs Map0 side panels: partner slot 4 has NO bonus (Map0: conservation 2); university slot 3 gives conservation 1 (Map0: 2); left edge 4th purple token is the unknown animal-silhouette-2 (Map0: conservation 1). Last worker, upgrade/worker slots, yellow tokens identical to Map0. Red worker-II tab at left of pink/blue border present as on Map0. Three kiosk icons on the board (hex-with-kiosk pictogram). Note card/mortarboard icon is language-independent.",
+ "identified": {
+  "sponsor_for_money": "coin marked X beside a blue '@' card: play a sponsor card from hand by paying its level (official FAQ: from hand only, not the display)",
+  "university": "grey pillared building: gain a university",
+  "multiplier": "x2: multiplier token on an action card (as the bonus tile)",
+  "upgrade_PROBABLE": "card with a circular arrow, red/blue stripe: read as upgrade an action card; not confirmed by a written source",
+  "animal_silhouette_2_UNKNOWN": "map 7 purple token: half-dark animal silhouette with 2; meaning unknown"
+ }
+}
